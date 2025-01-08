@@ -13,15 +13,15 @@ A Rust-based tool to generate shellcode for Linux systems based on desired sysca
 ## Installation
 
 Prerequisites:
-    - Rust toochain installed (via rustup)
+- Rust toochain installed (via rustup)
 Build from source:
-    `
-    git clone https://github.com/yourusername/rustcall.git
-    cd rustcall
-    cargo build --release
-    `
+`
+git clone https://github.com/yourusername/rustcall.git
+cd rustcall
+cargo build --release
+`
 `cargo install --path .`
 ## Usage
 ### Basic Usage
 -Generate shellcode for a specific arch/syscall:
-
+`shellforge --syscall execve --args "bin/sh"`
